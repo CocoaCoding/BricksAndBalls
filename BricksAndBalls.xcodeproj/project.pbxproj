@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F3B37512635FAEF00D1851A /* SKBorderScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3B37502635FAEF00D1851A /* SKBorderScene.swift */; };
 		3FC1F313262FFFE5007A9D0F /* BricksAndBallsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC1F312262FFFE5007A9D0F /* BricksAndBallsApp.swift */; };
 		3FC1F315262FFFE5007A9D0F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC1F314262FFFE5007A9D0F /* ContentView.swift */; };
 		3FC1F317262FFFE5007A9D0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FC1F316262FFFE5007A9D0F /* Assets.xcassets */; };
 		3FC1F31A262FFFE5007A9D0F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FC1F319262FFFE5007A9D0F /* Preview Assets.xcassets */; };
 		3FC1F325262FFFE6007A9D0F /* BricksAndBallsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC1F324262FFFE6007A9D0F /* BricksAndBallsTests.swift */; };
 		3FC1F330262FFFE6007A9D0F /* BricksAndBallsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC1F32F262FFFE6007A9D0F /* BricksAndBallsUITests.swift */; };
+		3FC1F3442630000B007A9D0F /* GameSKScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC1F3412630000B007A9D0F /* GameSKScene.swift */; };
+		3FC1F3452630000B007A9D0F /* AccelerometerSKScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC1F3422630000B007A9D0F /* AccelerometerSKScene.swift */; };
+		3FC1F3462630000B007A9D0F /* ScoreSKScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC1F3432630000B007A9D0F /* ScoreSKScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F3B37502635FAEF00D1851A /* SKBorderScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKBorderScene.swift; sourceTree = "<group>"; };
 		3FC1F30F262FFFE5007A9D0F /* BricksAndBalls.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BricksAndBalls.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FC1F312262FFFE5007A9D0F /* BricksAndBallsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BricksAndBallsApp.swift; sourceTree = "<group>"; };
 		3FC1F314262FFFE5007A9D0F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,6 +50,9 @@
 		3FC1F32B262FFFE6007A9D0F /* BricksAndBallsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BricksAndBallsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FC1F32F262FFFE6007A9D0F /* BricksAndBallsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BricksAndBallsUITests.swift; sourceTree = "<group>"; };
 		3FC1F331262FFFE6007A9D0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FC1F3412630000B007A9D0F /* GameSKScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameSKScene.swift; sourceTree = "<group>"; };
+		3FC1F3422630000B007A9D0F /* AccelerometerSKScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccelerometerSKScene.swift; sourceTree = "<group>"; };
+		3FC1F3432630000B007A9D0F /* ScoreSKScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreSKScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +103,7 @@
 		3FC1F311262FFFE5007A9D0F /* BricksAndBalls */ = {
 			isa = PBXGroup;
 			children = (
+				3FC1F340262FFFF8007A9D0F /* SpriteViews */,
 				3FC1F312262FFFE5007A9D0F /* BricksAndBallsApp.swift */,
 				3FC1F314262FFFE5007A9D0F /* ContentView.swift */,
 				3FC1F316262FFFE5007A9D0F /* Assets.xcassets */,
@@ -128,6 +137,17 @@
 				3FC1F331262FFFE6007A9D0F /* Info.plist */,
 			);
 			path = BricksAndBallsUITests;
+			sourceTree = "<group>";
+		};
+		3FC1F340262FFFF8007A9D0F /* SpriteViews */ = {
+			isa = PBXGroup;
+			children = (
+				3F3B37502635FAEF00D1851A /* SKBorderScene.swift */,
+				3FC1F3422630000B007A9D0F /* AccelerometerSKScene.swift */,
+				3FC1F3412630000B007A9D0F /* GameSKScene.swift */,
+				3FC1F3432630000B007A9D0F /* ScoreSKScene.swift */,
+			);
+			path = SpriteViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +279,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FC1F3452630000B007A9D0F /* AccelerometerSKScene.swift in Sources */,
+				3FC1F3442630000B007A9D0F /* GameSKScene.swift in Sources */,
+				3F3B37512635FAEF00D1851A /* SKBorderScene.swift in Sources */,
 				3FC1F315262FFFE5007A9D0F /* ContentView.swift in Sources */,
 				3FC1F313262FFFE5007A9D0F /* BricksAndBallsApp.swift in Sources */,
+				3FC1F3462630000B007A9D0F /* ScoreSKScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

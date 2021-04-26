@@ -15,4 +15,9 @@ class AccelerometerSKScene : SKBorderScene , ObservableObject {
         super.didMove(to: view)
         backgroundColor = .black
     }
+    
+    
+    
+    
+    
 }

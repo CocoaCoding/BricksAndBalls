@@ -37,6 +37,10 @@ class SKBorderScene: SKScene {
             // Top
             let topBorderSprite = SKSpriteNode(color: borderColor , size: sizeHorizonalBorder)
             topBorderSprite.position = CGPoint(x: xPosTopBorder, y: yPosTopBorder)
+            topBorderSprite.physicsBody = SKPhysicsBody(rectangleOf: topBorderSprite.frame.size)
+            topBorderSprite.physicsBody?.isDynamic = false
+            topBorderSprite.physicsBody?.categoryBitMask = UICategory
+            topBorderSprite.physicsBody?.contactTestBitMask = BallCategory
             addChild(topBorderSprite)
         }
         
@@ -44,6 +48,10 @@ class SKBorderScene: SKScene {
             // Bottom
             let bottomBorderSprite = SKSpriteNode(color: borderColor , size: sizeHorizonalBorder)
             bottomBorderSprite.position = CGPoint(x: xPosTopBorder, y: 0)
+            bottomBorderSprite.physicsBody = SKPhysicsBody(rectangleOf: bottomBorderSprite.frame.size)
+            bottomBorderSprite.physicsBody?.isDynamic = false
+            bottomBorderSprite.physicsBody?.categoryBitMask = UICategory
+            bottomBorderSprite.physicsBody?.contactTestBitMask = BallCategory
             addChild(bottomBorderSprite)
         }
         
@@ -51,6 +59,10 @@ class SKBorderScene: SKScene {
             // Left
             let leftBorderSprite = SKSpriteNode(color: borderColor , size: sizeVerticalBorder)
             leftBorderSprite.position = CGPoint(x: 0, y: height / 2)
+            leftBorderSprite.physicsBody = SKPhysicsBody(rectangleOf: leftBorderSprite.frame.size)
+            leftBorderSprite.physicsBody?.isDynamic = false
+            leftBorderSprite.physicsBody?.categoryBitMask = UICategory
+            leftBorderSprite.physicsBody?.contactTestBitMask = BallCategory
             addChild(leftBorderSprite)
         }
         
@@ -58,7 +70,13 @@ class SKBorderScene: SKScene {
             // Right
             let rightBorderSprite = SKSpriteNode(color: borderColor , size: sizeVerticalBorder)
             rightBorderSprite.position = CGPoint(x: width, y: height / 2)
+            rightBorderSprite.physicsBody = SKPhysicsBody(rectangleOf: rightBorderSprite.frame.size)
+            rightBorderSprite.physicsBody?.isDynamic = false
+            rightBorderSprite.physicsBody?.categoryBitMask = UICategory
+            rightBorderSprite.physicsBody?.contactTestBitMask = BallCategory
             addChild(rightBorderSprite)
         }
     }
+    
+
 }

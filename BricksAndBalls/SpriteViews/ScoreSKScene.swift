@@ -1,12 +1,8 @@
-//
 //  ScoreView.swift
 //  BricksAndBalls
-//
 //  Created by Holger Hinzberg on 21.04.21.
-//
 
-import Foundation
-
+import SwiftUI
 import SpriteKit
 
 class ScoreSKScene : SKBorderScene , ObservableObject {

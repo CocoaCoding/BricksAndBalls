@@ -17,15 +17,15 @@ struct ContentView: View {
             GeometryReader { geo in
                 SpriteView(scene: GetScoreScene(size: geo.size))
             }.frame(height: 30)
-          
+
             GeometryReader { geo in
                 SpriteView(scene: GetGameScene(size: geo.size))
                }
-   
+
             GeometryReader { geo in
                 SpriteView(scene: GetAccelerometerScene(size: geo.size))
                }.frame(height: 30)
-        
+
         }.ignoresSafeArea()
     }
     

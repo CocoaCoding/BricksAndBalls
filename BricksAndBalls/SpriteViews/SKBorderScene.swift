@@ -77,6 +77,4 @@ class SKBorderScene: SKScene {
             addChild(rightBorderSprite)
         }
     }
-    
-
 }

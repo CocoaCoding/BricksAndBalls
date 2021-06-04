@@ -80,9 +80,14 @@
 		3F07FFFE263740A600D66CC7 /* brick_purple@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F07FFD4263740A500D66CC7 /* brick_purple@2x.png */; };
 		3F07FFFF263740A600D66CC7 /* brick_blue@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F07FFD5263740A500D66CC7 /* brick_blue@3x.png */; };
 		3F14AC6C2651B1DB000EF20D /* HHSAccelerometerControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F14AC6B2651B1DB000EF20D /* HHSAccelerometerControl.swift */; };
+		3F322F39266A66BD0037801C /* LevelChooseScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F322F38266A66BD0037801C /* LevelChooseScene.swift */; };
+		3F322F3D266A79EB0037801C /* brick_rainbow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F322F3A266A79EB0037801C /* brick_rainbow@2x.png */; };
+		3F322F3E266A79EB0037801C /* brick_rainbow.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F322F3B266A79EB0037801C /* brick_rainbow.png */; };
+		3F322F3F266A79EB0037801C /* brick_rainbow@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F322F3C266A79EB0037801C /* brick_rainbow@3x.png */; };
 		3F3B37512635FAEF00D1851A /* SKBorderScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3B37502635FAEF00D1851A /* SKBorderScene.swift */; };
+		3F9EAB392652EB3000875C64 /* GameEnviroment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9EAB382652EB3000875C64 /* GameEnviroment.swift */; };
 		3FC1F313262FFFE5007A9D0F /* BricksAndBallsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC1F312262FFFE5007A9D0F /* BricksAndBallsApp.swift */; };
-		3FC1F315262FFFE5007A9D0F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC1F314262FFFE5007A9D0F /* ContentView.swift */; };
+		3FC1F315262FFFE5007A9D0F /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC1F314262FFFE5007A9D0F /* GameView.swift */; };
 		3FC1F317262FFFE5007A9D0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FC1F316262FFFE5007A9D0F /* Assets.xcassets */; };
 		3FC1F31A262FFFE5007A9D0F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FC1F319262FFFE5007A9D0F /* Preview Assets.xcassets */; };
 		3FC1F325262FFFE6007A9D0F /* BricksAndBallsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC1F324262FFFE6007A9D0F /* BricksAndBallsTests.swift */; };
@@ -183,10 +188,15 @@
 		3F07FFEF263740A600D66CC7 /* brick_blueberry@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "brick_blueberry@3x.png"; sourceTree = "<group>"; };
 		3F07FFF0263740A600D66CC7 /* brick_yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brick_yellow.png; sourceTree = "<group>"; };
 		3F14AC6B2651B1DB000EF20D /* HHSAccelerometerControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHSAccelerometerControl.swift; sourceTree = "<group>"; };
+		3F322F38266A66BD0037801C /* LevelChooseScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelChooseScene.swift; sourceTree = "<group>"; };
+		3F322F3A266A79EB0037801C /* brick_rainbow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "brick_rainbow@2x.png"; sourceTree = "<group>"; };
+		3F322F3B266A79EB0037801C /* brick_rainbow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brick_rainbow.png; sourceTree = "<group>"; };
+		3F322F3C266A79EB0037801C /* brick_rainbow@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "brick_rainbow@3x.png"; sourceTree = "<group>"; };
 		3F3B37502635FAEF00D1851A /* SKBorderScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKBorderScene.swift; sourceTree = "<group>"; };
+		3F9EAB382652EB3000875C64 /* GameEnviroment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameEnviroment.swift; sourceTree = "<group>"; };
 		3FC1F30F262FFFE5007A9D0F /* BricksAndBalls.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BricksAndBalls.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FC1F312262FFFE5007A9D0F /* BricksAndBallsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BricksAndBallsApp.swift; sourceTree = "<group>"; };
-		3FC1F314262FFFE5007A9D0F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3FC1F314262FFFE5007A9D0F /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		3FC1F316262FFFE5007A9D0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FC1F319262FFFE5007A9D0F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3FC1F31B262FFFE5007A9D0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -287,6 +297,9 @@
 		3F07FFC42637401400D66CC7 /* Bricks */ = {
 			isa = PBXGroup;
 			children = (
+				3F322F3B266A79EB0037801C /* brick_rainbow.png */,
+				3F322F3A266A79EB0037801C /* brick_rainbow@2x.png */,
+				3F322F3C266A79EB0037801C /* brick_rainbow@3x.png */,
 				3F07FFE5263740A500D66CC7 /* brick_blue.png */,
 				3F07FFD1263740A500D66CC7 /* brick_blue@2x.png */,
 				3F07FFD5263740A500D66CC7 /* brick_blue@3x.png */,
@@ -368,9 +381,11 @@
 		3FC1F311262FFFE5007A9D0F /* BricksAndBalls */ = {
 			isa = PBXGroup;
 			children = (
-				3FC1F340262FFFF8007A9D0F /* SpriteViews */,
 				3FC1F312262FFFE5007A9D0F /* BricksAndBallsApp.swift */,
-				3FC1F314262FFFE5007A9D0F /* ContentView.swift */,
+				3F9EAB382652EB3000875C64 /* GameEnviroment.swift */,
+				3F322F38266A66BD0037801C /* LevelChooseScene.swift */,
+				3FC1F314262FFFE5007A9D0F /* GameView.swift */,
+				3FC1F340262FFFF8007A9D0F /* SpriteViews */,
 				3FC1F316262FFFE5007A9D0F /* Assets.xcassets */,
 				3FC1F31B262FFFE5007A9D0F /* Info.plist */,
 				3FC1F318262FFFE5007A9D0F /* Preview Content */,
@@ -557,13 +572,16 @@
 				3F070017263740A600D66CC7 /* brick_lime.png in Resources */,
 				3F07FFF2263740A600D66CC7 /* brick_red@3x.png in Resources */,
 				3F070006263740A600D66CC7 /* brick_red.png in Resources */,
+				3F322F3E266A79EB0037801C /* brick_rainbow.png in Resources */,
 				3F070009263740A600D66CC7 /* brick_cyan.png in Resources */,
 				3F07001A263740A600D66CC7 /* brick_yellow.png in Resources */,
+				3F322F3D266A79EB0037801C /* brick_rainbow@2x.png in Resources */,
 				3F070007263740A600D66CC7 /* brick_green.png in Resources */,
 				3F07000C263740A600D66CC7 /* brick_green@2x.png in Resources */,
 				3F070000263740A600D66CC7 /* brick_blueberry.png in Resources */,
 				3F07FFF8263740A600D66CC7 /* brick_purple@3x.png in Resources */,
 				3F07000B263740A600D66CC7 /* brick_red@2x.png in Resources */,
+				3F322F3F266A79EB0037801C /* brick_rainbow@3x.png in Resources */,
 				3F070013263740A600D66CC7 /* brick_yellow@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -603,7 +621,9 @@
 				3F0700262637416100D66CC7 /* SpriteScaleMultiplicator.swift in Sources */,
 				3FC1F3442630000B007A9D0F /* GameSKScene.swift in Sources */,
 				3F07003B263741AD00D66CC7 /* BricksEnums.swift in Sources */,
+				3F322F39266A66BD0037801C /* LevelChooseScene.swift in Sources */,
 				3F0700272637416100D66CC7 /* LevelBricksBuilder.swift in Sources */,
+				3F9EAB392652EB3000875C64 /* GameEnviroment.swift in Sources */,
 				3F14AC6C2651B1DB000EF20D /* HHSAccelerometerControl.swift in Sources */,
 				3F070037263741AD00D66CC7 /* BrickRow.swift in Sources */,
 				3F07006626374B0800D66CC7 /* MessageLayerFactory.swift in Sources */,
@@ -613,7 +633,7 @@
 				3F3B37512635FAEF00D1851A /* SKBorderScene.swift in Sources */,
 				3F07005E263741D300D66CC7 /* HHSStarfield.swift in Sources */,
 				3F07005A263741D300D66CC7 /* Numbers + Helper.swift in Sources */,
-				3FC1F315262FFFE5007A9D0F /* ContentView.swift in Sources */,
+				3FC1F315262FFFE5007A9D0F /* GameView.swift in Sources */,
 				3F07003A263741AD00D66CC7 /* LevelTheme.swift in Sources */,
 				3F070059263741D300D66CC7 /* HHFileHelper.swift in Sources */,
 				3FC1F313262FFFE5007A9D0F /* BricksAndBallsApp.swift in Sources */,

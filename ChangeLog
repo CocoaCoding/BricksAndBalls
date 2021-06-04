@@ -1,7 +1,12 @@
 
-2021-05-16
+Checkin 2021-06-5
+- Added LevelChooseScene
+- ContentView renamed to GameView
+- ScoreSKScene updated with Score, Lives and Level
+
+Checkin 2021-05-16
 - Accelerometer added
 
-2021-04-26
+Checkin 2021-04-26
 - Files from old project imported
 

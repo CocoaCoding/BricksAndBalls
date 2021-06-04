@@ -9,7 +9,7 @@ import CoreMotion
 class GameSKScene : SKBorderScene , SKPhysicsContactDelegate, ObservableObject {
     
     // Diese Zahl muss später von außen reingegeben werden
-    let levelNumber : Int = 5
+    var levelNumber : Int = 1
     
     @AppStorage("HasHaptic") var hasHaptic = true;
     
@@ -36,10 +36,16 @@ class GameSKScene : SKBorderScene , SKPhysicsContactDelegate, ObservableObject {
     
     private var hitTimeValidator:BallHitTimeValidator?
     
+    private var gameEnviroment : GameEnviroment?
+    
     // Initial Setup
     override func sceneDidLoad()
     {
         super.sceneDidLoad()
+        
+        let appDelegate: CustomAppDelegate = CustomAppDelegate.shared
+        self.gameEnviroment = appDelegate.gameEnviroment
+        
         // self.scaleMode = .aspectFill
         backgroundColor = .black
         
@@ -49,10 +55,6 @@ class GameSKScene : SKBorderScene , SKPhysicsContactDelegate, ObservableObject {
         
         // Level Builder init
         self.levelBuilder = LevelBuilder(scene: self, paddings: self.worldPaddings)
-        
-        // Set current level information
-        let levelRepository = LevelRepository()
-        self.currentLevel = levelRepository.getLevel(self.levelNumber)
         
         // Bonuspunkte bei schnellen Hits
         self.hitTimeValidator = BallHitTimeValidator()
@@ -65,6 +67,11 @@ class GameSKScene : SKBorderScene , SKPhysicsContactDelegate, ObservableObject {
     override func didMove(to view: SKView)
     {
         super.didMove(to: view)
+        
+        // Set current level information
+        let levelRepository = LevelRepository()
+        self.currentLevel = levelRepository.getLevel(self.levelNumber)
+        
         
         // Theme (Background color and gap)
         let levelThemeBuilder = LevelThemeBuilder(scene: self, paddings: self.worldPaddings)
@@ -201,15 +208,13 @@ class GameSKScene : SKBorderScene , SKPhysicsContactDelegate, ObservableObject {
             }
             
             brick.hitsCount = brick.hitsCount - 1
-            
+  
             // Hits Count 0 => Brick entfernen
             if brick.hitsCount <= 0
             {
                 // Punkte addieren und Sprites reduzieren
-                
-                // self.gameController?.addScore(value: brick.score)
-                // self.scoreDisplay?.displayScoreChange()
-                
+                self.gameEnviroment?.addCurrentGameScore(value: brick.score)
+             
                 brick.removeFromParent()
                 self.bricksInSceneCount = self.bricksInSceneCount - 1
                 

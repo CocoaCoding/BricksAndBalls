@@ -5,8 +5,9 @@
 import SwiftUI
 import SpriteKit
 
-struct ContentView: View {
+struct GameView: View {
     
+    let levelNumber : Int
     @StateObject private var gameScene = GameSKScene()
     @StateObject private var scoreScene = ScoreSKScene()
     @StateObject private var accelerometerScene = AccelerometerSKScene()
@@ -26,11 +27,16 @@ struct ContentView: View {
                 SpriteView(scene: GetAccelerometerScene(size: geo.size))
                }.frame(height: 30)
 
-        }.ignoresSafeArea()
+        }
+        .ignoresSafeArea()
+        .navigationBarTitle("")
+                .navigationBarBackButtonHidden(true)
+                .navigationBarHidden(true)
     }
     
     func GetGameScene( size : CGSize) -> GameSKScene
     {
+        self.gameScene.levelNumber = self.levelNumber
         self.gameScene.externalSize = size
         return self.gameScene;
     }
@@ -52,6 +58,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        GameView(levelNumber: 1)
     }
 }

@@ -77,7 +77,7 @@ class BrickSpriteFactory
         }
         else if brickItem.color == .Rainbow
         {
-            brick = HHSSpriteNode(imagename: "rainbow")
+            brick = HHSSpriteNode(imagename: "brick_rainbow")
         }
         
         brick?.score = 10

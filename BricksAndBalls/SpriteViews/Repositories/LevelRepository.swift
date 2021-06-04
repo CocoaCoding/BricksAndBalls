@@ -23,7 +23,13 @@ class LevelRepository
     
     func getLevel(_ level:Int) -> Level
     {
-        return self.levels[level]!
+        return  self.levels[level]!
+    }
+    
+    func getLevelNumbers() -> [Int]
+    {
+        let levels = Array(self.levels.keys)
+        return levels.sorted()
     }
     
     func getAvailibleLevelsCount() -> Int
